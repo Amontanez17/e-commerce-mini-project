@@ -3,8 +3,9 @@
 function Navbar() {
   return (
     <header className="Header" id="Header">
-      <h1>Backmarket</h1>
       <nav className="Navbar">
+        <img src="../src/assets/Back_Market.png"></img>
+        <h1>Backmarket</h1>
         <ui>
           <li>
             <a href="#home"></a>
