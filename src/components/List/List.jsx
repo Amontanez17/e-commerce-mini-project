@@ -1,18 +1,22 @@
-import Products from "../../assets/products.json";
+import data from "../../assets/products.json";
 import ListItem from "../../components/List Item/ListItem.jsx";
 import { useState } from "react";
+import Form from "../Form/Form.jsx";
 
 function List() {
-  const [mobilePhone, setmobilePhone] = useState(Products);
+  const [products, setProducts] = useState(data);
 
   const handleDelete = (id) => {
-    const updatedList = mobilePhone.filter((item) => item.id !== id);
-    setmobilePhone(updatedList);
+    const updatedList = products.filter((item) => item.id !== id);
+    setProducts(updatedList);
   };
 
   return (
     <div id="products-container">
-      {mobilePhone.map((item) => (
+      <div>
+        <Form setProducts={setProducts} />
+      </div>
+      {products.map((item) => (
         <ListItem key={item.id} item={item} handleDelete={handleDelete} />
       ))}
     </div>
