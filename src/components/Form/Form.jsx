@@ -57,7 +57,7 @@ function Form({ setProducts }) {
       category,
       thumbnail,
     };
-    setProducts((products) => [...products, newItem]);
+    setProducts((products) => [newItem, ...products]);
   }
   return (
     <div className="stockManagement">

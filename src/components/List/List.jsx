@@ -1,10 +1,8 @@
-import data from "../../assets/products.json";
+
 import ListItem from "../../components/List Item/ListItem.jsx";
-import { useState } from "react";
 import Form from "../Form/Form.jsx";
 
-function List() {
-  const [products, setProducts] = useState(data);
+function List({products, setProducts}) {
 
   const handleDelete = (id) => {
     const updatedList = products.filter((item) => item.id !== id);
