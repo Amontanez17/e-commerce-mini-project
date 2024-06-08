@@ -1,17 +1,60 @@
-.webLogo {
-  max-width: 16rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul,
-li {
-  list-style-type: none;
+body {
+  font-family: Arial, sans-serif;
+}
+
+.Header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .Navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.webLogo {
+  height: 50px;
 }
 
 .nav-link-container {
   display: flex;
-  flex-direction: row;
+}
+
+.nav-link-container ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link-container ul li {
+  padding: 10px;
+}
+
+.nav-link-container ul li a,
+.nav-link-container ul li a:visited {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link-container ul li a:hover,
+.nav-link-container ul li a:focus {
+  color: #ddd;
+}
+
+.nav-link-container ul li a.active {
+  border-bottom: 2px solid white;
 }

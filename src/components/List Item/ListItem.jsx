@@ -13,8 +13,17 @@ function ListItem({ item, handleDelete }) {
     category,
     thumbnail,
   } = item;
+
+  
+  const handleDeleteClick = (event) => {
+    // event.stopPropagation();
+    event.preventDefault();
+    handleDelete(id); // Call the original handleDelete function
+  };
+
+
   return (
-    <Link to={`/item/${item.id}`}>
+    <Link to={`/item/${item.id}`} >
       <div>
         List Item
         <li key={id}>
@@ -27,7 +36,7 @@ function ListItem({ item, handleDelete }) {
           <p>Brand: {brand}</p>
           <p>Category: {category}</p>
           <img className="thumbnail" src={thumbnail} alt="item thumbnail" />
-          <button onClick={() => handleDelete(id)}>Delete</button>
+          <button onClick={handleDeleteClick}>Delete</button>
           {price <= 500 && <span>Deal</span>}
         </li>
       </div>
