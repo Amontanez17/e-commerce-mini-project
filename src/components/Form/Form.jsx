@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Form.css"
 
 function Form({ setProducts }) {
   //   const [id, setIdInput] = useState("");
