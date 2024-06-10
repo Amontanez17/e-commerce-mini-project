@@ -17,7 +17,7 @@ function Navbar() {
               <a href="#inventory">Manage</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="/about">About</a>
             </li>
           </ul>
         </div>
