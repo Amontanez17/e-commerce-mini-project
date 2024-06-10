@@ -21,7 +21,7 @@
     text-overflow: ellipsis;
   }
 
-
+  
   .list-item img.thumbnail {
     width: 300px; /* Set a fixed width */
     height: 300px; /* Set a fixed height */
@@ -33,7 +33,7 @@
   .list-item h2 {
     font-size: 1em;
     margin-bottom: 10px;
-    display: -webkit-box;
+     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
