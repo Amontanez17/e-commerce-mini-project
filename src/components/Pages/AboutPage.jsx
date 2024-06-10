@@ -27,12 +27,12 @@ function AboutPage() {
             alt="profile image"
           />
           <h3>Ruihua Zhang</h3>
-          <div class="socialLinks">
+          <div className="socialLinks">
             <a href="https://github.com/jasperzhang75">
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/ruihua-zhang-52a344157/">
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
           </div>
         </div>
@@ -44,12 +44,12 @@ function AboutPage() {
             alt="profile image"
           />
           <h3>Angela Montanez</h3>
-          <div class="socialLinks">
+          <div className="socialLinks">
             <a href="https://github.com/Amontanez17">
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/angela-montanez/">
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
           </div>
         </div>
