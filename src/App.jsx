@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar.jsx";
 // import Sidebar from "./components/Sidebar/Sidebar.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import Manage from "./components/Pages/Manage.jsx";
 import DashboardPage from "./components/Pages/DashboardPage.jsx";
 import ItemDetailsPage from "./components/Pages/ItemDetailsPage.jsx";
 import AboutPage from "./components/Pages/AboutPage.jsx";
@@ -25,6 +26,7 @@ function App() {
           path="/item/:itemId"
           element={<ItemDetailsPage products={products} />}
         />
+        <Route path="/manage" element={<Manage setProducts={setProducts} />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
 

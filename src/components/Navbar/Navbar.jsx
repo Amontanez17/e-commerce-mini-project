@@ -22,7 +22,7 @@ function Navbar() {
                 Dashboard
               </li>
             </Link>
-            <Link to={"/"}>
+            <Link to={"/manage"}>
               <li>
                 <img
                   className="manageLogo"
