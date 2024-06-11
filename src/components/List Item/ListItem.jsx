@@ -25,7 +25,7 @@ function ListItem({ item, handleDelete }) {
   return (
     <Link to={`/item/${item.id}`} >
       <div className="list-item">
-        List Item
+        
         <li key={id}>
           <h2>{title}</h2>
           

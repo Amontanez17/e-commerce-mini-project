@@ -9,7 +9,8 @@
   }
   
   .stockManagement {
-    max-width: 1000px;
+    display: none;
+    max-width: 1150px;
     margin: 20px auto;
     padding: 20px;
     background-color: #f9f9f9;
