@@ -7,7 +7,7 @@ function Navbar() {
     <header className="Header" id="Header">
       <nav className="Navbar">
         <p className="serviceName">
-          <img className="webLogo" src="../src/assets/squirrel1.png"></img>
+          <img className="webLogo" src="../src/assets/squirrel2.png"></img>
         Squirrel e-Shop Admin</p>
         {/* <h1>Backmarket</h1> */}
         <div className="nav-link-container">
@@ -18,18 +18,19 @@ function Navbar() {
                 <img className="dashboardLogo" src="../src/assets/dashboardlogo.svg"></img>
                 Dashboard</li>
             </Link>
+            <Link to={'/'}>
             <li>
             <img className="manageLogo" src="../src/assets/managelogo.svg"></img>
-              <a href="#inventory">Manage</a>
+              Manage
 
-            </li>
+            </li> </Link>
+            <Link to={'/'}>
             <li>
  
 
             <img className="aboutLogo" src="../src/assets/aboutlogo.svg"></img>
-              <a href="#about">About</a>
-
-            </li>
+              About
+            </li></Link>
           </ul>
         </div>
       </nav>
