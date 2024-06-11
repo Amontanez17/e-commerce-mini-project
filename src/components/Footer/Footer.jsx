@@ -1,11 +1,12 @@
 // import React from "react";
-import "./Footer.css"
+import "./Footer.css";
 
 function Footer() {
   return (
     <div className="footer">
+      <hr />
       <a href="https://github.com/Amontanez17/e-commerce-mini-project">
-        Check out the repo here
+        Link to the repo
       </a>
     </div>
   );

@@ -1,0 +1,53 @@
+#aboutPageContainer {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    margin-top: 0.3rem;
+  }
+}
+#teamMemberContainer {
+  display: flex; /* Use flexbox layout */
+  flex-direction: row;
+
+  gap: 4rem;
+  justify-content: space-between; /* To add space around the elements */
+}
+
+.teamMember {
+  /* Additional styling for teamMember divs */
+  text-align: center; /* To center the content */
+  flex: 1; /* To make both items occupy equal width */
+  margin: 10px; /* Add spacing around teamMember divs */
+  border-style: none;
+  border-radius: 20%;
+}
+.profileImg {
+  max-width: 20vh;
+  border-radius: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#aboutText {
+  display: block;
+  align-items: center;
+  max-width: 58vw;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  h2 {
+    padding: 1rem;
+  }
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.socialLinks a {
+  margin: 0 8px;
+  color: #000; /* Adjust the color as needed */
+  font-size: 1.8rem;
+}

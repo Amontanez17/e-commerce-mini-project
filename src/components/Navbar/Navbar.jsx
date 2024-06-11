@@ -24,8 +24,11 @@ function Navbar() {
 
             </li>
             <li>
+ 
+
             <img className="aboutLogo" src="../src/assets/aboutlogo.svg"></img>
               <a href="#about">About</a>
+
             </li>
           </ul>
         </div>
