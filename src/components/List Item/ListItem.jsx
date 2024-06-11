@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./ListItem.css";
+import "./ListItem.css"
 function ListItem({ item, handleDelete }) {
   const {
     id,
@@ -14,19 +14,21 @@ function ListItem({ item, handleDelete }) {
     thumbnail,
   } = item;
 
+
   const handleDeleteClick = (event) => {
     // event.stopPropagation();
     event.preventDefault();
-    handleDelete(id);
+    handleDelete(id); 
   };
 
+
   return (
-    <Link to={`/item/${item.id}`}>
+    <Link to={`/item/${item.id}`} >
       <div className="list-item">
+        
         <li key={id}>
           <h2>{title}</h2>
-
-          <img className="thumbnail" src={thumbnail} alt="item thumbnail" />
+          
           <p className="description">Description: {description}</p>
           <p>Price: {price} €</p>
           <p>Discount:{discountpercentage} % off</p>
@@ -34,6 +36,7 @@ function ListItem({ item, handleDelete }) {
           <p>Stock: {stock}</p>
           <p>Brand: {brand}</p>
           <p>Category: {category}</p>
+          <img className="thumbnail" src={thumbnail} alt="item thumbnail" />
           <button onClick={handleDeleteClick}>Delete</button>
           {price <= 500 && <span className="deal">Deal</span>}
         </li>
