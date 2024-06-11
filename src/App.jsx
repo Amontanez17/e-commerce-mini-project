@@ -25,7 +25,7 @@ function App() {
           path="/item/:itemId"
           element={<ItemDetailsPage products={products} />}
         />
-        <Route path="/about" elemet={<AboutPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
 
       {/* <Sidebar /> */}

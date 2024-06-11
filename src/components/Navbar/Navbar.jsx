@@ -26,6 +26,8 @@ function Navbar() {
             </li> </Link>
             <Link to={'/'}>
             <li>
+ 
+
             <img className="aboutLogo" src="../src/assets/aboutlogo.svg"></img>
               About
             </li></Link>
