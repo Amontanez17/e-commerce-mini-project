@@ -7,18 +7,21 @@
   width: 100%; /* Full width */
   bottom: 0; /* Align to the bottom of the viewport */
   left: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #f3f3f3;
 }
 
 .footer a {
   margin: 1rem 1rem;
-  color: #007bff; /* Link color */
+  color: #4a647e; /* Link color */
   text-decoration: none; /* Remove underline from links */
 }
 
 .footer a:hover {
-  color: #0056b3; /* Darker link color on hover */
+  color: #507597; /* Darker link color on hover */
 }
 
 hr {
   margin-bottom: 1rem;
+  color: #c5c5c5;
 }

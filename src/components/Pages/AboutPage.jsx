@@ -8,7 +8,7 @@ function AboutPage() {
       <div id="aboutText">
         {" "}
         {/* <h1>About Page</h1> */}
-        <h2>Meet The team</h2>
+        <h2>Meet The Team</h2>
         <p>
           We are Ruihua and Angela.Two web developement students at Ironhack
           France. This is our first React project and we are thrilled to be able
@@ -16,7 +16,7 @@ function AboutPage() {
         </p>
         <br />
         <p>
-          Check out our GitHub and LinkedIn profiles to see more of our work
+          Check out our GitHub and LinkedIn profiles to see more of our work.
         </p>
       </div>
       <div id="teamMemberContainer">

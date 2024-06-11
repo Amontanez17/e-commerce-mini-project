@@ -1,8 +1,17 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #4a647e;
+}
+body {
+  background-color: #f3f3f3;
+}
 #aboutPageContainer {
+  background-color: #f3f3f3;
   min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h3 {
     margin-top: 0.3rem;
   }

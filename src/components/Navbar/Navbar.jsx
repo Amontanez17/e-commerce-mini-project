@@ -8,29 +8,38 @@ function Navbar() {
       <nav className="Navbar">
         <p className="serviceName">
           <img className="webLogo" src="../src/assets/squirrel2.png"></img>
-        Squirrel e-Shop Admin</p>
+          Squirrel e-Shop Admin
+        </p>
         {/* <h1>Backmarket</h1> */}
         <div className="nav-link-container">
           <ul>
             <Link to={"/"}>
-            
               <li>
-                <img className="dashboardLogo" src="../src/assets/dashboardlogo.svg"></img>
-                Dashboard</li>
+                <img
+                  className="dashboardLogo"
+                  src="../src/assets/dashboardlogo.svg"
+                ></img>
+                Dashboard
+              </li>
             </Link>
-            <Link to={'/'}>
-            <li>
-            <img className="manageLogo" src="../src/assets/managelogo.svg"></img>
-              Manage
-
-            </li> </Link>
-            <Link to={'/'}>
-            <li>
- 
-
-            <img className="aboutLogo" src="../src/assets/aboutlogo.svg"></img>
-              About
-            </li></Link>
+            <Link to={"/"}>
+              <li>
+                <img
+                  className="manageLogo"
+                  src="../src/assets/managelogo.svg"
+                ></img>
+                Manage
+              </li>{" "}
+            </Link>
+            <Link to={"/about"}>
+              <li>
+                <img
+                  className="aboutLogo"
+                  src="../src/assets/aboutlogo.svg"
+                ></img>
+                About
+              </li>
+            </Link>
           </ul>
         </div>
       </nav>
