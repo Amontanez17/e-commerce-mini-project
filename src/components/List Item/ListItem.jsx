@@ -38,7 +38,7 @@ function ListItem({ item, handleDelete }) {
           <p>Category: {category}</p>
           <img className="thumbnail" src={thumbnail} alt="item thumbnail" />
           <button onClick={handleDeleteClick}>Delete</button>
-          {price <= 500 && <span className="deal">Deal</span>}
+          {price <= 500 && <span>Deal</span>}
         </li>
       </div>
     </Link>
