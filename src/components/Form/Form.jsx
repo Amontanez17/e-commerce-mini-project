@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./Form.css"
+import "./Form.css";
+import { useNavigate } from "react-router-dom";
 
 function Form({ setProducts }) {
   //   const [id, setIdInput] = useState("");
@@ -11,6 +12,7 @@ function Form({ setProducts }) {
   const [brand, setBrandInput] = useState("");
   const [category, setCategoryInput] = useState("");
   const [thumbnail, setThumbnailInput] = useState("");
+  const navigate = useNavigate();
 
   //   function handleIdInput(event) {
   //     setIdInput(event.currentTarget.value);
@@ -59,6 +61,7 @@ function Form({ setProducts }) {
       thumbnail,
     };
     setProducts((products) => [newItem, ...products]);
+    navigate("/");
   }
   return (
     <div className="stockManagement">

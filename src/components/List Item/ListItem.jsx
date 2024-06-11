@@ -21,7 +21,6 @@ function ListItem({ item, handleDelete }) {
     handleDelete(id); 
   };
 
-
   return (
     <Link to={`/item/${item.id}`} >
       <div className="list-item">
@@ -36,9 +35,8 @@ function ListItem({ item, handleDelete }) {
           <p>Stock: {stock}</p>
           <p>Brand: {brand}</p>
           <p>Category: {category}</p>
-          <img className="thumbnail" src={thumbnail} alt="item thumbnail" />
           <button onClick={handleDeleteClick}>Delete</button>
-          {price <= 500 && <span className="deal">Deal</span>}
+          {price <= 500 && <span>Deal</span>}
         </li>
       </div>
     </Link>
