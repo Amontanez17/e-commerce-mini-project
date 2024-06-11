@@ -7,6 +7,7 @@ import ItemDetailsPage from "./components/Pages/ItemDetailsPage.jsx";
 import AboutPage from "./components/Pages/AboutPage.jsx";
 import { Routes, Route } from "react-router-dom";
 import data from "./assets/products.json";
+import PageNotFound from "./components/Pages/PageNotFoundPage.jsx";
 import { useState } from "react";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           element={<ItemDetailsPage products={products} />}
         />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
 
       {/* <Sidebar /> */}
