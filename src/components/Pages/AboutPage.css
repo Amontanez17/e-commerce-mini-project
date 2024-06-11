@@ -54,6 +54,9 @@ body {
   justify-content: center;
   margin-top: 8px;
 }
+.socialLinks:hover {
+  color: #393690;
+}
 
 .socialLinks a {
   margin: 0 8px;
