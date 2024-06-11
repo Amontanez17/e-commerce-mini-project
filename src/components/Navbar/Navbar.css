@@ -5,16 +5,16 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .Header {
-  background-color: #333;
-  color: white;
+  background-color: #F3F3F3;;
+  color: #4A647E;
   padding: 10px 20px;
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 0px;
   left: 0;
   z-index: 1000;
 }
@@ -27,34 +27,143 @@ body {
 
 .webLogo {
   height: 50px;
+  
 }
 
 .nav-link-container {
   display: flex;
+width: 388.571px;
+justify-content: space-between;
+align-items: flex-start;
 }
 
 .nav-link-container ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 18px;
 }
+
+
+.dashboardLogo{
+  width: 12px;
+  height: 12px;
+}
+
+.manageLogo{
+  width: 12px;
+  height: 12px;
+}
+
+.aboutLogo {
+    width: 12px;
+    height: 12px;
+  }
 
 .nav-link-container ul li {
   padding: 10px;
+  /* background-color: #CDDEFF;
+  border-radius: 6px; */
 }
 
-.nav-link-container ul li a,
+
+/* .nav-link-container ul li a,
 .nav-link-container ul li a:visited {
-  color: white;
+  color: #4A647E;
   text-decoration: none;
-  font-weight: bold;
+  
 }
 
 .nav-link-container ul li a:hover,
 .nav-link-container ul li a:focus {
-  color: #ddd;
+  color: #4A647E;
 }
 
 .nav-link-container ul li a.active {
   border-bottom: 2px solid white;
+} */
+
+/* 基本样式 */
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.Header {
+  background-color: #F3F3F3;;
+  color: #4A647E;
+  padding: 10px 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Navbar 样式 */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo 样式 */
+.webLogo {
+  height: 40px;
+  margin-right: 0px;
+}
+
+.serviceName {
+  font-family: "IBM Plex Sans", sans-serif;
+    font-size: 18px;
+  font-weight: 500;
+  color: #4A647E;
+  display: flex;
+  align-items: center;
+}
+
+/* 导航链接容器 */
+/* .nav-link-container ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+} */
+
+.nav-link-container li {
+  display: flex;
+  align-items: center;
+}
+
+/* 链接样式 */
+.nav-link-container a {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  color: #4A647E;
+  font-size: 16px;
+  padding: 0px 5px 0px 5px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link-container a:hover {
+  background-color: #CDDEFF;
+}
+
+.nav-link-container a:focus {
+  background-color: #CDDEFF;
+}
+
+/* 图标样式 */
+.dashboardLogo,
+.manageLogo,
+.aboutLogo {
+  height: 12px;
+  margin-right: 10px;
+}
+
+/* Dashboard 的焦点样式 */
+li:first-child a {
+  background-color: #CDDEFF;
 }

@@ -6,17 +6,25 @@ function Navbar() {
   return (
     <header className="Header" id="Header">
       <nav className="Navbar">
-        <img className="webLogo" src="../src/assets/Back_Market.png"></img>
+        <p className="serviceName">
+          <img className="webLogo" src="../src/assets/squirrel1.png"></img>
+        Squirrel e-Shop Admin</p>
         {/* <h1>Backmarket</h1> */}
         <div className="nav-link-container">
           <ul>
             <Link to={"/"}>
-              <li>Dashboard</li>
+            
+              <li>
+                <img className="dashboardLogo" src="../src/assets/dashboardlogo.svg"></img>
+                Dashboard</li>
             </Link>
             <li>
+            <img className="manageLogo" src="../src/assets/managelogo.svg"></img>
               <a href="#inventory">Manage</a>
+
             </li>
             <li>
+            <img className="aboutLogo" src="../src/assets/aboutlogo.svg"></img>
               <a href="#about">About</a>
             </li>
           </ul>

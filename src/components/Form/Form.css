@@ -9,6 +9,7 @@
   }
   
   .stockManagement {
+    display: none;
     max-width: 1150px;
     margin: 20px auto;
     padding: 20px;
