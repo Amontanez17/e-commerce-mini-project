@@ -9,6 +9,7 @@ import Form from "./components/Form/Form.jsx";
 import { Routes, Route } from "react-router-dom";
 import data from "./assets/products.json";
 import { useState } from "react";
+import PageNotFoundPage from "./components/Pages/PageNotFoundPage.jsx";
 
 function App() {
   const [products, setProducts] = useState(data);
@@ -28,6 +29,7 @@ function App() {
           element={<ItemDetailsPage products={products}setProducts={setProducts} />}
         />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<PageNotFoundPage />} />
       </Routes>
 
       {/* <Sidebar /> */}
