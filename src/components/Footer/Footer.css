@@ -26,5 +26,6 @@
 hr {
   color: #ffffff;
   margin-bottom: 12px;
+  border-top: 1px solid rgb(203, 203, 203);
 }
 

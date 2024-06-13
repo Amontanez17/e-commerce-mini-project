@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom"
 import "./Form.css"
 
 function Form({ setProducts }) {
-  //   const [id, setIdInput] = useState("");
   const [title, setTitleInput] = useState("");
   const [description, setDescriptionInput] = useState("");
   const [price, setPriceInput] = useState("");
@@ -13,9 +12,7 @@ function Form({ setProducts }) {
   const [category, setCategoryInput] = useState("");
   const [thumbnail, setThumbnailInput] = useState("");
   const navigate = useNavigate();
-  //   function handleIdInput(event) {
-  //     setIdInput(event.currentTarget.value);
-  //   }
+ 
 
   function handleTitleInput(event) {
     setTitleInput(event.currentTarget.value);
@@ -85,6 +82,7 @@ function Form({ setProducts }) {
           name="titleInput"
           value={title}
           onChange={handleTitleInput}
+          required
         />
         <p>Category</p>
         <input
@@ -93,6 +91,7 @@ function Form({ setProducts }) {
           placeholder="Item Category"
           value={category}
           onChange={handleCategoryInput}
+          required
         />
         <p>Brand</p>
           <input
@@ -101,35 +100,39 @@ function Form({ setProducts }) {
             placeholder="Brand Name"
             value={brand}
             onChange={handleBrandInput}
+            required
           /> 
         <p>Price</p>
           <input
           placeholder="Price"
-          type="text"
+          type="number"
           name="priceInput"
           value={price}
           onChange={handlePriceInput}
+          required
         />
         <p>Discount</p>
         <input
           placeholder="Discount"
-          type="text"
+          type="number"
           name="discountPercentageInput"
           value={discountPercentage}
           onChange={handleDiscountPercentageInput}
+          required
         />
         <p>Stock</p>
         <input
-          type="text"
+          type="number"
           name="stockInput"
           placeholder="Stock Quantity"
           value={stock}
           onChange={handleStockInput}
+          required
         />
         <p>Thumbnail</p>
          <input
           placeholder="Thumbnail URL"
-          type="text"
+          type="url"
           name="thumbnailInput"
           value={thumbnail}
           onChange={handleThumbnailInput}
@@ -141,6 +144,7 @@ function Form({ setProducts }) {
           name="descriptionInput"
           value={description}
           onChange={handleDescriptionInput}
+          required
         />
        
         
