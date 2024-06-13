@@ -10,7 +10,7 @@ function AboutPage() {
         {/* <h1>About Page</h1> */}
         <h2>Meet The Team</h2>
         <p>
-          We are Ruihua and Angela.Two web developement students at Ironhack
+          We are Ruihua and Angela. Two web developement students at Ironhack
           France. This is our first React project and we are thrilled to be able
           to share it with you!
         </p>

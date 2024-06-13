@@ -1,6 +1,6 @@
 import "./PageNotFoundPage.css";
 import cryingSquirrel from "./../../assets/crying-squirrel@2x.png";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const PageNotFound = () => {
   return (
@@ -10,7 +10,7 @@ const PageNotFound = () => {
       {/* <img id="not-found-img" src="/crying-squirrel@2x.png" alt="" /> */}
       <img id="not-found-img" src={cryingSquirrel} alt="" />
       <p>
-        <Link to="/">Go to Home</Link>
+        {/* <Link to="/">Go to Home</Link> */}
       </p>
     </div>
   );
