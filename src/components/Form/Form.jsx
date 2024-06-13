@@ -78,9 +78,9 @@ function Form({ setProducts }) {
 
       <form onSubmit={handleSubmit}>
         
-      <p className="formHeader">Product Name</p>
+      <p className="formHeader">Name</p>
         <input
-          placeholder=""
+          placeholder="Product Name"
           type="text"
           name="titleInput"
           value={title}
@@ -90,7 +90,7 @@ function Form({ setProducts }) {
         <input
           type="text"
           name="categoryInput"
-          placeholder=""
+          placeholder="Item Category"
           value={category}
           onChange={handleCategoryInput}
         />
@@ -98,13 +98,13 @@ function Form({ setProducts }) {
           <input
             type="text"
             name="brandInput"
-            placeholder=""
+            placeholder="Brand Name"
             value={brand}
             onChange={handleBrandInput}
           /> 
         <p>Price</p>
           <input
-          placeholder=""
+          placeholder="Price"
           type="text"
           name="priceInput"
           value={price}
@@ -112,7 +112,7 @@ function Form({ setProducts }) {
         />
         <p>Discount</p>
         <input
-          placeholder=""
+          placeholder="Discount"
           type="text"
           name="discountPercentageInput"
           value={discountPercentage}
@@ -122,13 +122,13 @@ function Form({ setProducts }) {
         <input
           type="text"
           name="stockInput"
-          placeholder=""
+          placeholder="Stock Quantity"
           value={stock}
           onChange={handleStockInput}
         />
         <p>Thumbnail</p>
          <input
-          placeholder=""
+          placeholder="Thumbnail URL"
           type="text"
           name="thumbnailInput"
           value={thumbnail}
@@ -136,7 +136,7 @@ function Form({ setProducts }) {
         />
         <p>Description</p>
         <input
-          placeholder=""
+          placeholder="Discription"
           type="text"
           name="descriptionInput"
           value={description}
