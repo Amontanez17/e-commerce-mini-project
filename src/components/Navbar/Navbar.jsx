@@ -6,10 +6,11 @@ function Navbar() {
   return (
     <header className="Header" id="Header">
       <nav className="Navbar">
+      <Link to={"/"}>
         <p className="serviceName">
           <img className="webLogo" src="../src/assets/squirrel2.png"></img>
           Squirrel e-Shop Admin
-        </p>
+        </p> </Link>
         {/* <h1>Backmarket</h1> */}
         <div className="nav-link-container">
           <ul>
@@ -22,13 +23,13 @@ function Navbar() {
                 Dashboard
               </li>
             </Link>
-            <Link to={"/"}>
+            <Link to={"/additem"}>
               <li>
                 <img
                   className="manageLogo"
                   src="../src/assets/managelogo.svg"
                 ></img>
-                Manage
+                Add Item
               </li>{" "}
             </Link>
             <Link to={"/about"}>
