@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState} from "react";
+import { useNavigate } from "react-router-dom"
 import "./Form.css"
 
 function Form({ setProducts }) {
@@ -11,7 +12,7 @@ function Form({ setProducts }) {
   const [brand, setBrandInput] = useState("");
   const [category, setCategoryInput] = useState("");
   const [thumbnail, setThumbnailInput] = useState("");
-
+  const navigate = useNavigate();
   //   function handleIdInput(event) {
   //     setIdInput(event.currentTarget.value);
   //   }
@@ -59,60 +60,33 @@ function Form({ setProducts }) {
       thumbnail,
     };
     setProducts((products) => [newItem, ...products]);
+    navigate('/')
   }
   return (
+    <div className="stockContainer">
+
+          
+    <div className="formContainer">
+      <p>Add New Item</p>
+        <img src="../src/assets/Frame1650.png" alt="Squirrel" />
+         </div>
+
+
     <div className="stockManagement">
+     
+      
+
       <form onSubmit={handleSubmit}>
-        <h2>Stock Management</h2>
-        {/* <input
-          type="text"
-          name="idInput"
-          placeholder="Enter ID"
-          value={idInput}
-          onChange={handleIdInput}
-        ></input> */}
+        
+      <p className="formHeader">Product Name</p>
         <input
-          placeholder="Enter Title"
+          placeholder=""
           type="text"
           name="titleInput"
           value={title}
           onChange={handleTitleInput}
         />
-        <input
-          placeholder="Enter Description"
-          type="text"
-          name="descriptionInput"
-          value={description}
-          onChange={handleDescriptionInput}
-        />
-        <input
-          placeholder="Set Price"
-          type="text"
-          name="priceInput"
-          value={price}
-          onChange={handlePriceInput}
-        />
-        <input
-          placeholder="Set Discount %"
-          type="text"
-          name="discountPercentageInput"
-          value={discountPercentage}
-          onChange={handleDiscountPercentageInput}
-        />
-        <input
-          type="text"
-          name="stockInput"
-          placeholder="Enter Stock"
-          value={stock}
-          onChange={handleStockInput}
-        />
-        <input
-          type="text"
-          name="brandInput"
-          placeholder="Enter Brand"
-          value={brand}
-          onChange={handleBrandInput}
-        />
+        <p>Category</p>
         <input
           type="text"
           name="categoryInput"
@@ -120,16 +94,64 @@ function Form({ setProducts }) {
           value={category}
           onChange={handleCategoryInput}
         />
+        <p>Brand</p>
+          <input
+            type="text"
+            name="brandInput"
+            placeholder=""
+            value={brand}
+            onChange={handleBrandInput}
+          /> 
+        <p>Price</p>
+          <input
+          placeholder=""
+          type="text"
+          name="priceInput"
+          value={price}
+          onChange={handlePriceInput}
+        />
+        <p>Discount</p>
         <input
-          placeholder="Enter url"
+          placeholder=""
+          type="text"
+          name="discountPercentageInput"
+          value={discountPercentage}
+          onChange={handleDiscountPercentageInput}
+        />
+        <p>Stock</p>
+        <input
+          type="text"
+          name="stockInput"
+          placeholder=""
+          value={stock}
+          onChange={handleStockInput}
+        />
+        <p>Thumbnail</p>
+         <input
+          placeholder=""
           type="text"
           name="thumbnailInput"
           value={thumbnail}
           onChange={handleThumbnailInput}
         />
+        <p>Description</p>
+        <input
+          placeholder=""
+          type="text"
+          name="descriptionInput"
+          value={description}
+          onChange={handleDescriptionInput}
+        />
+       
+        
+        
+       
         <button type="submit">Submit</button>
       </form>
     </div>
+    </div>
+    
+
   );
 }
 
