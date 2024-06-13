@@ -9,7 +9,7 @@ const PageNotFound = () => {
       {/* <img id="not-found-img" src="/crying-squirrel@2x.png" alt="" /> */}
       <img id="not-found-img" src={cryingSquirrel} alt="" />
       <p>
-        {/* <a href="/">Go to Home</a> */}
+        <a href="/">Go to Home</a>
       </p>
     </div>
   );
