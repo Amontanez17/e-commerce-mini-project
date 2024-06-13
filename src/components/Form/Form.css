@@ -90,6 +90,7 @@ form input {
   margin: 5px 0;
   border: 1.5px solid #E1E1E1;
   border-radius: 4px;
+  font-size: small;
 }
 
 form button {
@@ -105,4 +106,8 @@ form button {
 
 form button:hover {
   background-color: #c3d0fa;
+}
+
+.formHeader {
+  font-size: medium;
 }
