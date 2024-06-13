@@ -24,7 +24,7 @@
   .item-details-thumbnail {
     flex: 1;
     width: 430px;
-    height: auto;
+    height: 430px;
     border-radius: 4px;
     margin-right: 20px;
     object-fit: cover;
@@ -110,7 +110,7 @@
   
   .updateForm{
     width: auto;
-    height: 450px;
+    height: 430px;
     padding: 0px;
     padding-left: 3px;
     padding-right: 3px;
