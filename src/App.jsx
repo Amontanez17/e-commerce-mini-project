@@ -8,6 +8,7 @@ import AboutPage from "./components/Pages/AboutPage.jsx";
 import Form from "./components/Form/Form.jsx";
 import { Routes, Route } from "react-router-dom";
 import data from "./assets/products.json";
+import PageNotFound from "./components/Pages/PageNotFoundPage.jsx";
 import { useState } from "react";
 import PageNotFoundPage from "./components/Pages/PageNotFoundPage.jsx";
 
@@ -23,10 +24,12 @@ function App() {
             <DashboardPage products={products} setProducts={setProducts} />
           }
         />
-        <Route path="/additem" element={<Form setProducts={setProducts}/>} />
+        <Route path="/additem" element={<Form setProducts={setProducts} />} />
         <Route
           path="/item/:itemId"
-          element={<ItemDetailsPage products={products}setProducts={setProducts} />}
+          element={
+            <ItemDetailsPage products={products} setProducts={setProducts} />
+          }
         />
         <Route path="/about" element={<AboutPage />} />
         <Route path="*" element={<PageNotFoundPage />} />
