@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState} from "react";
+import { useNavigate } from "react-router-dom"
 import "./Form.css"
 
 function Form({ setProducts }) {
@@ -11,7 +12,7 @@ function Form({ setProducts }) {
   const [brand, setBrandInput] = useState("");
   const [category, setCategoryInput] = useState("");
   const [thumbnail, setThumbnailInput] = useState("");
-
+  const navigate = useNavigate();
   //   function handleIdInput(event) {
   //     setIdInput(event.currentTarget.value);
   //   }
@@ -59,77 +60,98 @@ function Form({ setProducts }) {
       thumbnail,
     };
     setProducts((products) => [newItem, ...products]);
+    navigate('/')
   }
   return (
+    <div className="stockContainer">
+
+          
+    <div className="formContainer">
+      <p>Add New Item</p>
+        <img src="../src/assets/Frame1650.png" alt="Squirrel" />
+         </div>
+
+
     <div className="stockManagement">
+     
+      
+
       <form onSubmit={handleSubmit}>
-        <h2>Stock Management</h2>
-        {/* <input
-          type="text"
-          name="idInput"
-          placeholder="Enter ID"
-          value={idInput}
-          onChange={handleIdInput}
-        ></input> */}
+        
+      <p className="formHeader">Name</p>
         <input
-          placeholder="Enter Title"
+          placeholder="Product Name"
           type="text"
           name="titleInput"
           value={title}
           onChange={handleTitleInput}
         />
+        <p>Category</p>
         <input
-          placeholder="Enter Description"
           type="text"
-          name="descriptionInput"
-          value={description}
-          onChange={handleDescriptionInput}
+          name="categoryInput"
+          placeholder="Item Category"
+          value={category}
+          onChange={handleCategoryInput}
         />
-        <input
-          placeholder="Set Price"
+        <p>Brand</p>
+          <input
+            type="text"
+            name="brandInput"
+            placeholder="Brand Name"
+            value={brand}
+            onChange={handleBrandInput}
+          /> 
+        <p>Price</p>
+          <input
+          placeholder="Price"
           type="text"
           name="priceInput"
           value={price}
           onChange={handlePriceInput}
         />
+        <p>Discount</p>
         <input
-          placeholder="Set Discount %"
+          placeholder="Discount"
           type="text"
           name="discountPercentageInput"
           value={discountPercentage}
           onChange={handleDiscountPercentageInput}
         />
+        <p>Stock</p>
         <input
           type="text"
           name="stockInput"
-          placeholder="Enter Stock"
+          placeholder="Stock Quantity"
           value={stock}
           onChange={handleStockInput}
         />
-        <input
-          type="text"
-          name="brandInput"
-          placeholder="Enter Brand"
-          value={brand}
-          onChange={handleBrandInput}
-        />
-        <input
-          type="text"
-          name="categoryInput"
-          placeholder=""
-          value={category}
-          onChange={handleCategoryInput}
-        />
-        <input
-          placeholder="Enter url"
+        <p>Thumbnail</p>
+         <input
+          placeholder="Thumbnail URL"
           type="text"
           name="thumbnailInput"
           value={thumbnail}
           onChange={handleThumbnailInput}
         />
+        <p>Description</p>
+        <input
+          placeholder="Discription"
+          type="text"
+          name="descriptionInput"
+          value={description}
+          onChange={handleDescriptionInput}
+        />
+       
+        
+        
+       
         <button type="submit">Submit</button>
       </form>
     </div>
+    </div>
+    
+
   );
 }
 

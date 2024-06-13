@@ -3,7 +3,7 @@
   /* color: white; White text for readability */
   height: auto;
   text-align: center; /* Center align text */
-  padding: 20px; /* Padding for space inside the footer */
+  padding: 12px; /* Padding for space inside the footer */
   position: fixed; /* Fix the footer at the bottom */
   width: 100%; /* Full width */
   bottom: 0; /* Align to the bottom of the viewport */
@@ -13,7 +13,7 @@
 }
 
 .footer a {
-  margin: 1rem 1rem;
+  margin: 2px;
   color: #4a647e; /* Link color */
 
   text-decoration: none; /* Remove underline from links */
@@ -25,14 +25,6 @@
 
 hr {
   color: #ffffff;
-  margin-bottom: 1rem;
+  margin-bottom: 12px;
 }
 
-/* .footer-cont {
-  position: absolute;
-  bottom: 0;
-  border-top: 1px solid #000000;
-  width: 80vw;
-  height: inherit;
-  z-index: 1;
-} */
